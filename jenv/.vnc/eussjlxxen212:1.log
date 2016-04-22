@@ -1,0 +1,18 @@
+08/02/2013 18:07:30 Xvnc version X.org/xf4vnc custom version
+08/02/2013 18:07:30 Copyright (C) 2001-2004 Alan Hourihane.
+08/02/2013 18:07:30 Copyright (C) 2000-2004 Constantin Kaplinsky
+08/02/2013 18:07:30 Copyright (C) 1999 AT&T Laboratories Cambridge
+08/02/2013 18:07:30 All Rights Reserved.
+08/02/2013 18:07:30 See http://www.tightvnc.com/ for information on TightVNC
+08/02/2013 18:07:30 See http://xf4vnc.sf.net for xf4vnc-specific information
+08/02/2013 18:07:30 Desktop name 'X' (eussjlxxen212:1)
+08/02/2013 18:07:30 Protocol versions supported: 3.7, 3.3
+08/02/2013 18:07:30 RGB format 8 8 8
+08/02/2013 18:07:30 Listening for VNC connections on TCP port 5901
+08/02/2013 18:07:30 Listening for HTTP connections on TCP port 5801
+08/02/2013 18:07:30   URL http://eussjlxxen212:5801
+[dix] Could not init font path element /usr/share/fonts/local, removing from list!
+[dix] Could not init font path element /usr/share/fonts/uni, removing from list!
+[dix] Could not init font path element /usr/share/fonts/CID, removing from list!
+xrdb: No such file or directory
+xrdb: can't open file '/home/ejitkol/.Xresources'

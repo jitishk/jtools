@@ -1,0 +1,51 @@
+terminal length 0 
+show clock | save rib_logs.178.start.show
+show system status detail | append rib_logs.178.start.show
+show system status detail card all | append rib_logs.178.start.show
+show process rib thread-info | append rib_logs.178.start.show
+show process rib thread-history | append rib_logs.178.start.show
+show process rib chunk-statistics | append rib_logs.178.start.show
+show ipc process rib detail | append rib_logs.178.start.show
+show ip route counters global | append rib_logs.178.start.show
+show ip route xcrp | append rib_logs.178.start.show
+show process rib shared-memory-statistics | append rib_logs.178.start.show
+show clock | append rib_logs.178.start.show
+
+terminal length 0 | save rib_logs.178.end.show
+show clock | append rib_logs.178.end.show
+show system status detail | append rib_logs.178.end.show
+show system status detail card all | append rib_logs.178.end.show
+show process rib thread-info | append rib_logs.178.end.show
+show process rib thread-history | append rib_logs.178.end.show
+show process rib chunk-statistics | append rib_logs.178.end.show
+show ipc process rib detail | append rib_logs.178.end.show
+show ip route counters global | append rib_logs.178.end.show
+show ip route xcrp | append rib_logs.178.end.show
+show clock | append rib_logs.178.end.show
+show process rib shared-memory-statistics | append rib_logs.178.end.show
+
+terminal length 0 | save rib_logs.257.start.show
+show clock | append rib_logs.257.start.show
+show system status detail | append rib_logs.257.start.show
+show system status detail card all | append rib_logs.257.start.show
+show process rib thread-info | append rib_logs.257.start.show
+show process rib thread-history | append rib_logs.257.start.show
+show process rib chunk-statistics | append rib_logs.257.start.show
+show ipc process rib detail | append rib_logs.257.start.show
+show ip route counters global | append rib_logs.257.start.show
+show ip route xcrp | append rib_logs.257.start.show
+show process rib shared-memory-statistics | append rib_logs.257.start.show
+show clock | append rib_logs.257.start.show
+
+terminal length 0 | save rib_logs.257.end.show
+show clock | append rib_logs.257.end.show
+show system status detail | append rib_logs.257.end.show
+show system status detail card all | append rib_logs.257.end.show
+show process rib thread-info | append rib_logs.257.end.show
+show process rib thread-history | append rib_logs.257.end.show
+show process rib chunk-statistics | append rib_logs.257.end.show
+show ipc process rib detail | append rib_logs.257.end.show
+show ip route counters global | append rib_logs.257.end.show
+show ip route xcrp | append rib_logs.257.end.show
+show process rib shared-memory-statistics | append rib_logs.257.end.show
+show clock | append rib_logs.257.end.show

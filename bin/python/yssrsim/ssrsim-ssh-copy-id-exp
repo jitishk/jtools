@@ -1,0 +1,28 @@
+#!/tools/swdev/bin/expect
+# author emtfere
+
+set ssh_port [lindex $argv 0]
+set identity_file [lindex $argv 1]
+
+spawn ssh -p $ssh_port -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@localhost
+expect {
+    "assword:" {
+        send "root\n"
+    } "Redback" {
+        send_user "Key already copied.\n"
+        exit 1
+    } "Connection closed by remote host" {
+        exit 2
+    } timeout {
+        puts "Timedout waiting for response.\n"
+        exit 3
+    }
+}
+
+expect "Redback"
+
+send "mkdir -p ~/.ssh; chmod 700 ~/.ssh; touch ~/.ssh/authorized_keys; cat $identity_file >> ~/.ssh/authorized_keys\n"
+
+expect "Redback"
+send "exit\n"
+expect eof

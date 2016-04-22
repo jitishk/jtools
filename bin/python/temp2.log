@@ -1,0 +1,30 @@
+test@sjl3-ecp-ssr28.eld's password: 
+Last login: Wed Apr  2 12:38:08 2014 from 147.117.60.134
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+test********************************************************************************
+These computer resources, specifically Internet access
+and E-mail, are provided for authorized users only. For legal, security and
+cost reasons, utilization and access of resources are monitored and recorded
+in log files.  All information (whether business or personal) that is created,
+received, downloaded, stored, sent or otherwise processed can be accessed,
+reviewed, copied, recorded or deleted by Ericsson, in accordance with approved
+internal procedures, at any time if deemed necessary or appropriate, and
+without advance notice. Any evidence of unauthorized access or misuse of
+Ericsson resources may result in disciplinary actions, including termination
+of employment or assignment, and could subject a user to criminal prosecution.
+Your use of Ericsson's computer resources constitutes your consent to
+Ericsson's Policies and Directives, including the provisions stated above.
+
+
+IF YOU ARE NOT AN AUTHORIZED USER, PLEASE EXIT IMMEDIATELY
+********************************************************************************
+[local]sjl3-ecp-ssr28#test
+% Incomplete command: test
+[local]sjl3-ecp-ssr28#terminal length 0
+[local]sjl3-ecp-ssr28#release download ftp://ejitkol@10.10.10.22//scratch/testim ages/ejitkol/pkg-SSR.14.1.21.100.746.tar.gz
+Not all cards are ready, download abort
+[local]sjl3-ecp-ssr28#

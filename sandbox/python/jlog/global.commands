@@ -1,0 +1,19 @@
+show clock
+show process rib detail
+show process rib ipc detail
+show process rib ipc-pack-statistics
+show process rib shared-memory-statistics
+show process rib shmm
+show process rib ipc detail
+show process rib thread-info
+show process rib thread-history
+show process rib chunk-statistics
+show system status process ribd
+show ip route global
+show ip route summary all
+show ip route counters global
+show ip route xcrp
+show ism gen 
+show ism global 
+show system status merged 
+show system status detail 

@@ -1,0 +1,19 @@
+spawn ppa slot 4
+send ism event port id 4/1 state up port_only
+
+circuit grid 4/1:511:63/1/1/4101 context 0x40080001 admin up
+send ism event circuit grid 4/1:511:63/1/1/4101 config
+
+interface grid 0x10004101 ethernet context 0x40080001 ip address 11.1.1.1/24
+interface grid 0x10004101 bind circuit 4/1:511:63/1/1/4101
+interface grid 0x10004101 state up
+send ism event interface grid 0x10004101 config
+
+client id 1 set distance 1
+client id 1 context 0x40080001 register
+
+nexthop id 1 connected interface 0x10004101 address 11.1.1.2
+
+sleep time 1
+client id 1 context 0x40080001 route prefix 100.100.100.0/24 range 10000 nexthop 1 
+

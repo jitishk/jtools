@@ -1,0 +1,415 @@
+Trying 10.126.142.15...
+Connected to sjl3-ecp-ssr14.eld.
+Escape character is '^]'.
+login: test
+test
+Password: test
+
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+[local]sjl3-ecp-ssr14#en
+en
+[local]sjl3-ecp-ssr14#test
+test
+% Incomplete command: test
+[local]sjl3-ecp-ssr14#terminal length 0
+terminal length 0
+[local]sjl3-ecp-ssr14#show clock
+show clock
+Wed Jul 31 23:39:13 2013 UTC
+[local]sjl3-ecp-ssr14#show ip route summary all
+show ip route summary all
+load-balance ip : Use the built-in default hash function
+load-balance link-group : Use the built-in default hash function
+Total unicast routes summary in all contexts: 
+Route Source                  Tot-Routes     Act-Routes  Max Ever Reached
+
+Connected                              1              1                 1
+Static                                 4              4                 4
+[local]sjl3-ecp-ssr14#show ip route counters global
+show ip route counters global
+
+      ---  RIB Global Counters Information  --- Jul 31 23:39:13.463
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              21
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              10
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :               4
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :               4
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               3
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               8
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              15
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              10
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              21
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :               2
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+
+IPC rcv messages:
+IPC_RIB_SHW_RT_TBL_SUMM                           :               2
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :               4
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               1
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               2
+IPC_RIB_EOF                                       :               5
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :              13
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_RCV_RSO_LA_CHK                   :               8
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :              13
+ISM2_ID_IF_IPCFG                                  :               6
+ISM2_ID_IF_CFG                                    :               6
+ISM2_ID_CCT_STATE                                 :              17
+ISM2_ID_CCT_CFG                                   :              11
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :               9               9
+FIB_APP_EOF                                  :               2               2
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              12
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               2
+RIB_EVENT_SLOT_SYNC_ADD                           :               1
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+[local]sjl3-ecp-ssr14#show clock
+show clock
+Wed Jul 31 23:39:16 2013 UTC
+[local]sjl3-ecp-ssr14#show ip route summary all
+show ip route summary all
+load-balance ip : Use the built-in default hash function
+load-balance link-group : Use the built-in default hash function
+Total unicast routes summary in all contexts: 
+Route Source                  Tot-Routes     Act-Routes  Max Ever Reached
+
+Connected                              1              1                 1
+Static                                 4              4                 4
+[local]sjl3-ecp-ssr14#show ip route counters global
+show ip route counters global
+
+      ---  RIB Global Counters Information  --- Jul 31 23:39:16.828
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              21
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              10
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :               4
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :               4
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               3
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               8
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              15
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              10
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              21
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :               2
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+
+IPC rcv messages:
+IPC_RIB_SHW_RT_TBL_SUMM                           :               3
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :               4
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               1
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               3
+IPC_RIB_EOF                                       :               5
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :              13
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_RCV_RSO_LA_CHK                   :               8
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :              13
+ISM2_ID_IF_IPCFG                                  :               6
+ISM2_ID_IF_CFG                                    :               6
+ISM2_ID_CCT_STATE                                 :              17
+ISM2_ID_CCT_CFG                                   :              11
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :               9               9
+FIB_APP_EOF                                  :               2               2
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              12
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               2
+RIB_EVENT_SLOT_SYNC_ADD                           :               1
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+[local]sjl3-ecp-ssr14#show clock
+show clock
+Wed Jul 31 23:39:19 2013 UTC
+[local]sjl3-ecp-ssr14#show ip route summary all
+show ip route summary all
+load-balance ip : Use the built-in default hash function
+load-balance link-group : Use the built-in default hash function
+Total unicast routes summary in all contexts: 
+Route Source                  Tot-Routes     Act-Routes  Max Ever Reached
+
+Connected                              1              1                 1
+Static                                 4              4                 4
+[local]sjl3-ecp-ssr14#show ip route counters global
+show ip route counters global
+
+      ---  RIB Global Counters Information  --- Jul 31 23:39:20.188
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              21
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              10
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :               4
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :               4
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               3
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               8
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              15
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              10
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              21
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :               2
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+
+IPC rcv messages:
+IPC_RIB_SHW_RT_TBL_SUMM                           :               4
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :               4
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               1
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               4
+IPC_RIB_EOF                                       :               5
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :              13
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_RCV_RSO_LA_CHK                   :               8
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :              13
+ISM2_ID_IF_IPCFG                                  :               6
+ISM2_ID_IF_CFG                                    :               6
+ISM2_ID_CCT_STATE                                 :              17
+ISM2_ID_CCT_CFG                                   :              11
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :               9               9
+FIB_APP_EOF                                  :               2               2
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              12
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               2
+RIB_EVENT_SLOT_SYNC_ADD                           :               1
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+[local]sjl3-ecp-ssr14#show clock
+show clock
+Wed Jul 31 23:39:23 2013 UTC
+[local]sjl3-ecp-ssr14#show ip route summary all
+show ip route summary all
+load-balance ip : Use the built-in default hash function
+load-balance link-group : Use the built-in default hash function
+Total unicast routes summary in all contexts: 
+Route Source                  Tot-Routes     Act-Routes  Max Ever Reached
+
+Connected                              1              1                 1
+Static                                 4              4                 4
+[local]sjl3-ecp-ssr14#show ip route counters global
+show ip route counters global
+
+      ---  RIB Global Counters Information  --- Jul 31 23:39:23.548
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              21
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              10
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :               4
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :               4
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               3
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               8
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              15
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              10
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              21
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :               2
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+
+IPC rcv messages:
+IPC_RIB_SHW_RT_TBL_SUMM                           :               5
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :               4
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               1
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               5
+IPC_RIB_EOF                                       :               5
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :              13
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_RCV_RSO_LA_CHK                   :               8
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :              13
+ISM2_ID_IF_IPCFG                                  :               6
+ISM2_ID_IF_CFG                                    :               6
+ISM2_ID_CCT_STATE                                 :              17
+ISM2_ID_CCT_CFG                                   :              11
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :               9               9
+FIB_APP_EOF                                  :               2               2
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              12
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               2
+RIB_EVENT_SLOT_SYNC_ADD                           :               1
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+[local]sjl3-ecp-ssr14#show clock
+show clock
+Wed Jul 31 23:39:26 2013 UTC
+[local]sjl3-ecp-ssr14#show ip route summary all
+show ip route summary all
+load-balance ip : Use the built-in default hash function
+load-balance link-group : Use the built-in default hash function
+Total unicast routes summary in all contexts: 
+Route Source                  Tot-Routes     Act-Routes  Max Ever Reached
+
+Connected                              1              1                 1
+Static                                 4              4                 4
+[local]sjl3-ecp-ssr14#show ip route counters global
+show ip route counters global
+
+      ---  RIB Global Counters Information  --- Jul 31 23:39:26.912
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              21
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              10
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :               4
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :               4
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               3
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               8
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              15
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              10
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              21
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :               2
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+
+IPC rcv messages:
+IPC_RIB_SHW_RT_TBL_SUMM                           :               6
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :               4
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               1
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               6
+IPC_RIB_EOF                                       :               5
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :              13
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_RCV_RSO_LA_CHK                   :               8
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :              13
+ISM2_ID_IF_IPCFG                                  :               6
+ISM2_ID_IF_CFG                                    :               6
+ISM2_ID_CCT_STATE                                 :              17
+ISM2_ID_CCT_CFG                                   :              11
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :               9               9
+FIB_APP_EOF                                  :               2               2
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              12
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               2
+RIB_EVENT_SLOT_SYNC_ADD                           :               1
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+[local]sjl3-ecp-ssr14#

@@ -1,0 +1,12 @@
+
+
+setenv PATH /home/ejitkol/bin:/tools/swdev/bin:/user/kde/3.1/bin:/usr/i686-pc-linux-gnu/gcc-bin/3.3.5-20050130:/opt/backdown-jdk-1.4.1/bin:/opt/blackdown-jdk-1.4.1/jre/bin:/usr/qt/3/bin:usr/kde/3.4/bin:usr/kde/3.1/bin:/opt/aim:/home/ejitkol/bin:/tools/swdev/bin:/user/kde/3.1/bin:/usr/i686-pc-linux-gnu/gcc-bin/3.3.5-20050130:/opt/backdown-jdk-1.4.1/bin:/opt/blackdown-jdk-1.4.1/jre/bin:/usr/qt/3/bin:usr/kde/3.4/bin:usr/kde/3.1/bin:/opt/aim:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/usr/bin/python:/usr/bin/python:/home/ejitkol/trees/sqa/ARTS/infra/bin:/home/ejitkol/bin:/home/ejitkol/.local/:/home/ejitkol/jtools/sandbox/python:/home/ejitkol/jtools/sandbox/sh
+
+setenv PYTHONPATH /home/ejitkol/.local/lib64/python2.6/site-packages/
+
+
+# We suggest you keep all of your aliases in a seperate file called .aliases
+# # If .aliases exists it will envoked by the next line:
+if ( -f $HOME/.aliases ) then
+    source $HOME/.aliases 
+endif

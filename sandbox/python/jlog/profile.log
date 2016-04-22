@@ -1,0 +1,48 @@
+Trying 10.126.142.152...
+Connected to sjl3-ecp-ssr30.eld.
+Escape character is '^]'.
+login: test
+test
+Password: test
+
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+[local]sjl3-ecp-ssr30>en
+en
+Password: test
+
+[local]sjl3-ecp-ssr30#start sh
+start sh
+[?1034hsh-3.2$ su
+su
+Password: root
+
+[?1034hbash-3.2# start sh
+start sh
+bash: start: command not found
+bash-3.2# su
+su
+[?1034hbash-3.2# root
+root
+bash: root: command not found
+bash-3.2# opcontrol --dump
+opcontrol --dump
+bash-3.2# opcontrol --stop
+opcontrol --stop
+Stopping profiling.
+bash-3.2# opreport --session-dir=/md/oprofile-results --symbols --callgraph --output-file=oprofile.callgraph
+opreport --session-dir=/md/oprofile-results --symbols --callgraph --ou tput-file=oprofile.callgraph
+opreport error: Already displaying results for parameter tgid with values:
+tgid:4043,tgid:27489,
+which conflicts with parameter tid.
+Suggestion: specify tgid: or --merge tgid
+bash-3.2# opreport --session-dir=/md/oprofile-results --symbols --output-file=oprofile.report
+opreport --session-dir=/md/oprofile-results --symbols --output-file=op rofile.report
+opreport error: Already displaying results for parameter tgid with values:
+tgid:4043,tgid:27489,
+which conflicts with parameter tid.
+Suggestion: specify tgid: or --merge tgid
+bash-3.2# 

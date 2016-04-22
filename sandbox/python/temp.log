@@ -1,0 +1,54 @@
+Trying 10.126.142.15...
+Connected to sjl3-ecp-ssr14.eld.
+Escape character is '^]'.
+login: test
+test
+Password: test
+
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+[local]sjl3-ecp-ssr14#en
+en
+[local]sjl3-ecp-ssr14#test
+test
+% Incomplete command: test
+[local]sjl3-ecp-ssr14#terminal length 0
+terminal length 0
+[local]sjl3-ecp-ssr14#rcm-debug
+
+rcm-debug
+
+[10] (rcm-debug)# term len 0
+
+[20] (rcm-debug)# show system status process rcm
+History for Process: rcm
+  Date/Time            Status          Message
+  -------------------  --------------  -------
+  Jul 31 23:13:30.702  Starting        Init
+  Jul 31 23:13:31.584  Starting        XC State: Active
+  Jul 31 23:13:31.797  Starting        Multi-inst init callbacks complete
+  Jul 31 23:13:31.797  Starting        LIMC-RCM-EP: registered
+  Jul 31 23:13:31.816  Starting        Binary configuration read: FALSE
+  Jul 31 23:13:31.911  Starting        [rcm_comp_BE_set_demand] PPP-CONF-EP-NAME recor
+  Jul 31 23:13:32.045  Starting        [rcm_comp_BE_set_demand] PPPOE-CONF-EP-NAME rec
+  Jul 31 23:13:32.071  Starting        [rcm_comp_BE_set_demand] L2TP-CONF-EP-NAME reco
+  Jul 31 23:13:32.193  Starting        Post init callbacks complete
+  Jul 31 23:13:32.195  Starting        DB initialization signal broadcast
+  Jul 31 23:13:32.195  Running         Ready
+  Jul 31 23:13:32.197  Running         ISM2-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.197  Running         ARP-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.197  Running         RPM-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.198  Running         IF_CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.198  Running         AAA-RCM-ATTR-IPC-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         CLS-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         RIB-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         SYSMON-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         CSM-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         LOGG-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         PEM-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         LBLMGR-CONF-EP-NAME endpoint is up
+  Jul 31 23:13:32.199  Running         DLM_AGT_CLI_EP_NAME endpoint is up
+  Jul 31 23:13:32.199  Running         STAT-CONF-EP-NAME endp

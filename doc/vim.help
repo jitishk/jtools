@@ -1,0 +1,16 @@
+
+Save and Quit all open tab
+:wqa
+
+Do for all windows
+:windo set nowrap
+
+Do for all tabls
+:tabdo normal @a
+
+Scroll split files simultaneously
+:windo set scrollbind 
+
+
+Search in all windows
+:windo execute '/show ip route'

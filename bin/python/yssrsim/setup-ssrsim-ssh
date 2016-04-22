@@ -1,0 +1,95 @@
+#! /usr/bin/expect
+# slightly modified version of emtfere's setup-ssrsim-ssh
+
+proc restart {process} {
+    send "term mon\n"
+    expect "#"
+
+    send "proc rest $process\n"
+    expect {
+        "restarting <$process> now" {
+        }
+        default {
+            send_user "Could not restart $process\n"
+        }
+    }
+}
+
+set rpsw [lindex $argv 0]
+set restart_file [lindex $argv 1]
+set update [lindex $argv 2]
+set expect_file [lindex $argv 3]
+
+set timeout 20
+spawn ssh $rpsw
+expect "Redback"
+if { ! [string compare $update "false"] } {
+    send "sed -i '/export PATH/ s|\$|:/usr/lib/siara/bin|g' /root/.profile\n"
+} else {
+    send_user "update=$update\n"
+}
+send "cd /root\n"
+expect "Redback"
+send "shopt -s nullglob\n"
+expect "Redback"
+send "for FILE in *; do mv /usr/lib/siara/bin/\$FILE /usr/lib/siara/bin/\$FILE.orig; "
+send "cp \$FILE /usr/lib/siara/bin/; done\n"
+expect "Redback"
+
+send "/usr/lib/siara/bin/exec_cli -nx\n"
+send "\n"
+expect {
+    "#" {
+    }
+    ">" {
+        set en 0
+        while {$en == 0} {
+            sleep 1
+            send "en\n"
+            expect "#" {
+                set en 1
+            }
+        }
+    }
+}
+set conf 0
+while {$conf == 0} {
+    send "conf\n"
+    expect {
+        "Configuration commands currently disabled" {
+        }
+        "(config)#" {
+            set conf 1
+        }
+    }   
+    sleep 2
+}
+send "end\n"
+expect "#"
+set timeout 90
+send "conf ericsson.cfg\n"
+expect "#"
+
+set timeout 10
+# parse modules to restart
+set f [open $restart_file] 
+while { [gets $f line] != -1 } {
+    if { ! [ regexp {^[ \t]*$} $line ]} {
+        restart $line
+    }
+}
+send "\n"
+expect "#" {
+    send "exit\n"
+}
+expect "Redback"
+
+if { [string compare $expect_file ""] } {
+    send_user "Running script $expect_file\n"
+    source $expect_file
+}
+
+set timeout 10
+send "exit\n"
+expect eof
+exit 0

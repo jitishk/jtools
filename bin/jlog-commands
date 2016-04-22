@@ -1,0 +1,25 @@
+show process rib detail
+show process rib ipc detail
+show process rib ipc-pack-statistics
+show process rib shared-memory-statistics
+show process rib shmm
+show process rib ipc detail
+show process rib thread-info
+show process rib thread-history
+show process rib chunk-statistics
+show system status process ribd
+show system status process bgp
+show ipv route global
+show ipv route summary all
+show ip route client
+show clock
+show ipv route 100:0:0:1::/64 det
+show ipv route 100:0:1e:8480::/64 det
+show ip route counters global
+show log | grep RIB
+show log | grep BGP
+clear ip route counters global
+clear log
+
+
+

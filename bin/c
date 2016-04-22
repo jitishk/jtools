@@ -1,0 +1,590 @@
+bash/jload-ref.sh:#7. Handle prompts for shell, CLI, and CLI Admin modes
+bash/jload-ref.sh:#8. Interactive mode for logging into ref
+bash/jload-ref.sh:# for i in "$@"
+bash/jload-ref.sh:for RefIP in ${refips[@]}; do
+bash/jload-ref.sh:# Waiting for shell-prompt "~#" is not correct for scp. Works for now.
+bash/jload-ref.sh:for Item in ${Items[@]}; do
+bash/jload-ref.sh:done # End for-loop of Items
+bash/jload-ref.sh:done # End for-loop of RefIPs
+bash/jcompile.sh:for arg in "$@"
+bash/jcompile.sh:    #If scratch directory exists, force reuse it, and configure links
+bash/jcompile.sh:        ScratchFlags='--force-reuse'
+bash/jutf-install.sh:# 4. Sanity check for files
+bash/jutf-install.sh:    for File in `cat utf-new.files`; do
+bash/jutf-install.sh:    for File in `cat utf-new.files`; do
+branch-checkout:    echo "    dir-name        : name of directory for src (e.g. sfi_158980)"
+branch-compile:    echo "    dir-name        : name of directory for src (e.g. sfi_158980)"
+branch-compile:    echo "    build-target    : target for building src (all|SE1200|SE800|SE100)"
+branch-compile:echo  "Checking for valid scratch path $SCRATCH_PATH/$BranchDir..."
+branch-compile:    echo "Setting up scratch links for $BranchDir..."
+branch-compile:    #$CMD_PATH/scratch-config fails, force cleanup
+branch-compile:        echo "%    ERROR: scratch setup failed, trying force-cleanup"
+branch-compile:        $CMD_PATH/scratch-config --force-cleanup
+branch-compile:    #$CMD_PATH/scratch-config --, force cleanup
+branch-compile:    #force cleanup fails, try clobber 
+branch-compile:    #    echo "%    ERROR: scratch force cleanup failed, trying clobber"
+branch-compile:        echo "%    ERROR: scratch force-cleanup failed, delete & recreate"
+branch-compile:#building tree for target
+branch-compile:echo "Building tree $BranchDir for target $CompileTarget... "
+branch-compile:for Ifile in `ls *.gz`; do
+branch-compile:    fDate=`stat $Ifile --format='%x' | cut --bytes=1-4,6-7,9-10`    
+branch-compile:        echo "$Ifile - last compiled on `stat $Ifile --format='%x' | cut --bytes=1-10`"
+branch-cscope:    echo "  branch-dir      : name of directory for src (e.g. sfi_158980)"
+branch-cscope:    echo "  root-dir-name   : root directory for cscope (root|rib|pwd)"
+branch-cscope:echo "Sanity check for directories... " 
+branch-cscope:for File in `ls cscope.*`; do
+ecpconnect:    print onpath.before
+ecpconnect:    print onpath.before
+ecpconnect:    print onpath.before
+ecpconnect:    onpath.sendline ('conn port ' + port1 + ' to ' + port2 + ' force')
+ecpconnect:    print onpath.before
+gprof2dot:# GNU Lesser General Public License for more details.
+gprof2dot:    def __init__(self, name, null, aggregator, formatter = str):
+gprof2dot:        self._formatter = formatter
+gprof2dot:    def format(self, val):
+gprof2dot:        return self._formatter(val)
+gprof2dot:    """Base class for all objects in profile which can store events."""
+gprof2dot:    There should be at most one call object for every pair of functions.
+gprof2dot:        """Remove extraneous information from C++ demangled function names."""
+gprof2dot:            for other in function.cycle.functions:
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for callee_id in function.calls.keys():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for cycle in cycles:
+gprof2dot:                for member in cycle.functions:
+gprof2dot:        for n in visited:
+gprof2dot:        for f in self.functions.keys():
+gprof2dot:            for n in self.functions[f].calls.keys():
+gprof2dot:        for n in path:
+gprof2dot:            for c in f.calls.keys():
+gprof2dot:        for f in self.functions:
+gprof2dot:        for call in function.calls.itervalues():
+gprof2dot:                for member in members:
+gprof2dot:        # Aggregate for incoming calls
+gprof2dot:        for cycle in self.cycles:
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        # Aggregate the input for each cycle 
+gprof2dot:        for cycle in self.cycles:
+gprof2dot:            for function in self.functions.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:                for call in function.calls.itervalues():
+gprof2dot:            # Compute the outevent for the whole cycle
+gprof2dot:            for member in cycle.functions:
+gprof2dot:                for call in member.calls.itervalues():
+gprof2dot:            for function in self.functions.itervalues():
+gprof2dot:                    for call in function.calls.itervalues():
+gprof2dot:            for member in cycle.functions:
+gprof2dot:            for callee, call_ratio in callees.iteritems():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        """Aggregate an event for the whole profile."""
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        for function_id in self.functions.keys():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for callee_id in function.calls.keys():
+gprof2dot:        for function in self.functions.itervalues():
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:        for cycle in self.cycles:
+gprof2dot:            for function in cycle.functions:
+gprof2dot:        for event, value in events.iteritems():
+gprof2dot:            sys.stderr.write('    %s: %s\n' % (event.name, event.format(value)))
+gprof2dot:        # TODO: store more source line information
+gprof2dot:    """Base class for parsers that read line-based formats."""
+gprof2dot:    """Parser for GNU gprof output.
+gprof2dot:        for name, value in groupdict.iteritems():
+gprof2dot:        for line in lines[1:]:
+gprof2dot:        while line != '\014': # form feed
+gprof2dot:        for index in self.cycles.iterkeys():
+gprof2dot:        for entry in self.functions.itervalues():
+gprof2dot:            for child in entry.children:
+gprof2dot:        for cycle in cycles.itervalues():
+gprof2dot:    """Parser for valgrind's callgrind tool.
+gprof2dot:    - http://valgrind.org/docs/manual/cl-format.html
+gprof2dot:        for i in range(self.num_positions):
+gprof2dot:    """Parser for linux perf callgraph output.
+gprof2dot:        perf script | gprof2dot.py --format=perf
+gprof2dot:        for caller in callchain[1:]:
+gprof2dot:    """Parser for oprofile callgraph output.
+gprof2dot:    - http://oprofile.sourceforge.net/doc/opreport.html#opreport-callgraph
+gprof2dot:        'linenr info': r'(?P<source>\(no location information\)|\S+:\d+)',
+gprof2dot:        for partial in partials.itervalues():
+gprof2dot:        for _callers, _function, _callees in self.entries.itervalues():
+gprof2dot:            for _callee in _callees.itervalues():
+gprof2dot:            for _callee in _callees.itervalues():
+gprof2dot:        entry_re = r'^\s*' + r'\s+'.join([self._fields_re[field] for field in fields]) + r'(?P<self>\s+\[self\])?$'
+gprof2dot:        if 'source' in fields and fields['source'] != '(no location information)':
+gprof2dot:    """Parser for java hprof output
+gprof2dot:        for id, trace in self.traces.iteritems():
+gprof2dot:            for func, file, line in trace:
+gprof2dot:        for id, object in objects.iteritems():
+gprof2dot:        for id, node in nodes.iteritems():
+gprof2dot:    """Parser for MacOSX Shark output.
+gprof2dot:        for _function, _callees in self.entries.itervalues():
+gprof2dot:            for _callee in _callees.itervalues():
+gprof2dot:    """Parser for CSVs generted by XPerf, from Microsoft Windows Performance Tools.
+gprof2dot:        for row in it:
+gprof2dot:        for column in range(len(row)):
+gprof2dot:        for name, column in self.column.iteritems():
+gprof2dot:            for factory in int, float:
+gprof2dot:            for symbol in stack[1:]:
+gprof2dot:    """Parser for GNU gprof output.
+gprof2dot:    - http://sleepygraph.sourceforge.net/
+gprof2dot:        for line in lines:
+gprof2dot:        for line in lines:
+gprof2dot:            callstack = [self.symbols[symbol_id] for symbol_id in callstack]
+gprof2dot:            for caller in callstack[1:]:
+gprof2dot:        for column in range(len(fields)):
+gprof2dot:        for values, children in self.rows:
+gprof2dot:            for name, value in zip(self.fields, values):
+gprof2dot:            children = dict([(child.name, child) for child in children])
+gprof2dot:        for fields, tables in results:
+gprof2dot:            for fields, _ in children:
+gprof2dot:        for fn, (cc, nc, tt, ct, callers) in self.stats.stats.iteritems():
+gprof2dot:            for fn, value in callers.iteritems():
+gprof2dot:                    for i in xrange(0, len(value), 4):
+gprof2dot:    """Writer for the DOT language.
+gprof2dot:        for function in profile.functions.itervalues():
+gprof2dot:            for event in TOTAL_TIME_RATIO, TIME_RATIO:
+gprof2dot:                    label = event.format(function[event])
+gprof2dot:            for call in function.calls.itervalues():
+gprof2dot:                for event in TOTAL_TIME_RATIO, CALLS:
+gprof2dot:                        label = event.format(call[event])
+gprof2dot:        for name, value in attrs.iteritems():
+gprof2dot:        return "#" + "".join(["%02x" % float2int(c) for c in (r, g, b)])
+gprof2dot:            '-f', '--format',
+gprof2dot:            dest="format", default="prof",
+gprof2dot:            help="profile format: prof, callgrind, oprofile, hprof, sysprof, shark, sleepy, aqtime, pstats, or xperf [default: %default]")
+gprof2dot:        if len(self.args) > 1 and self.options.format != 'pstats':
+gprof2dot:        if self.options.format in stdinFormats:
+gprof2dot:            parser = stdinFormats[self.options.format](fp)
+gprof2dot:        elif self.options.format == 'pstats':
+gprof2dot:                parser.error('at least a file must be specified for pstats input')
+gprof2dot:        elif self.options.format == 'sleepy':
+gprof2dot:                parser.error('exactly one file must be specified for sleepy input')
+gprof2dot:            parser.error('invalid format \'%s\'' % self.options.format)
+Binary file grep.grep matches
+jclean-repo:        echo "Scratch directory for repo $ScratchDirectory/$Repo not found";
+jcscope:echo "Sanity check for directories... " 
+jcscope:for File in `ls cscope.*`; do
+jlines.sh:for file in files; then
+jload-ref:#7. Handle prompts for shell, CLI, and CLI Admin modes
+jload-ref:#8. Interactive mode for logging into ref
+jload-ref:# for i in "$@"
+jload-ref:for RefIP in ${refips[@]}; do
+jload-ref:# Waiting for shell-prompt "~#" is not correct for scp. Works for now.
+jload-ref:for Item in ${Items[@]}; do
+jload-ref:done # End for-loop of Items
+jload-ref:done # End for-loop of RefIPs
+jloader:for opt, arg in opts:
+jloader:        # TODO check format for user/pwd
+jloader:        # TODO check for sdk
+jloader:    images = cli.before.split('\r\n')[1].split()
+jloader:    for image in images:
+jlog:for opt, arg in opts:
+jlog:        # check format for user/pwd
+jprofiler:for command in commands:
+jssrsim:#Globals for all simulators
+jssrsim:    print "%10s:\t%s" % ("--prepare", "prepare the image for ssr-sim")
+jssrsim:    print "%10s:\t%s" % ("--access", "prints login information")
+jssrsim:for arg in sys.argv[1:num_args]: 
+jtrace.py:    for file in files.split('\n'):
+jtrace.py:        for ref in refs.split('\n'):
+jtrace.py:    for func in callers.keys():
+jtrace.py:for func in callers.keys():
+jtrace.sh:for File in `grep -Ircl --include=*.{c,cpp,h} $FunctionName *`; do
+proc-logs.sh:	for file in `ls RIB_LOG*`; do
+proc-logs.sh:for file in `ls RIB_LOG*`; do
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 7
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 6
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 5
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 4
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 3
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 2
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 1
+python/oprofile/session/samples/oprofiled.log:---- Statistics for cpu : 0
+python/yssrsim/.git/hooks/prepare-commit-msg.sample:# into the message, just before the "git status" output.  It is
+python/yssrsim/.git/hooks/post-receive.sample:# An example hook script for the "post-receive" event.
+python/yssrsim/.git/hooks/post-receive.sample:# stdin in the form
+python/yssrsim/.git/hooks/post-receive.sample:# see contrib/hooks/ for a sample, or uncomment the next line and
+python/yssrsim/.git/hooks/post-update.sample:# An example hook script to prepare a packed repository for use over
+python/yssrsim/.git/hooks/pre-commit.sample:# Cross platform projects tend to avoid non-ascii filenames; prevent
+python/yssrsim/.git/hooks/pre-commit.sample:	# even required, for portability to Solaris 10's /usr/bin/tr), since
+python/yssrsim/.git/hooks/pre-commit.sample:	echo "with people on other platforms."
+python/yssrsim/.git/hooks/pre-rebase.sample:# The "pre-rebase" hook is run just before "git rebase" starts doing
+python/yssrsim/.git/hooks/pre-rebase.sample:# $1 -- the upstream the series was forked from.
+python/yssrsim/.git/hooks/pre-rebase.sample:		for my $elem (map {
+python/yssrsim/.git/hooks/pre-rebase.sample: * Once a topic branch forks from "master", "master" is never
+python/yssrsim/.git/hooks/pre-rebase.sample:   earlier mistakes, a new topic branch is created by forking at
+python/yssrsim/.git/hooks/pre-rebase.sample:    clean up before publishing, and things that have not been
+python/yssrsim/.git/hooks/pre-rebase.sample:    fork the topic (perhaps with the same name) afresh from the
+python/yssrsim/.git/hooks/update.sample:# check for no description
+python/yssrsim/.git/hooks/update.sample:			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+python/yssrsim/.git/logs/refs/heads/master:5a33cb841b96575730fb1095ae89267390d65a71 e5ce1c8638613d1a58cd223369946395aa513b0d Jeno Hajdu <jeno.hajdu@ericsson.com> 1364209946 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:e5ce1c8638613d1a58cd223369946395aa513b0d 907cb68d2eeca48a14b8e1231d89d886ab674a83 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364228699 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:907cb68d2eeca48a14b8e1231d89d886ab674a83 11ab2f937156d36e84b51e390c3d462df43a8bde Jeno Hajdu <jeno.hajdu@ericsson.com> 1364229142 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:11ab2f937156d36e84b51e390c3d462df43a8bde 36e487bee0a7ec2ed7c0349b30a818744e241720 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364230143 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:36e487bee0a7ec2ed7c0349b30a818744e241720 de5c6cae042127f2c535e358bdbce57fc1eca0c2 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364305271 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:de5c6cae042127f2c535e358bdbce57fc1eca0c2 9aa19c4f2029765cef1d3e2e68304ea5aba936d6 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364306037 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:9aa19c4f2029765cef1d3e2e68304ea5aba936d6 635166a38928037f5055bf6344868854fc51e695 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364309534 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:635166a38928037f5055bf6344868854fc51e695 b2510f9f14b07e2362cf071b88050360244a7f35 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364482593 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:b2510f9f14b07e2362cf071b88050360244a7f35 14fd24ba554279a782e071c4e98a85b515a2b700 Jeno Hajdu <jeno.hajdu@ericsson.com> 1365694941 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:14fd24ba554279a782e071c4e98a85b515a2b700 d8a4833c8c66ba07317a9c752d7f4cadb6255f81 Jeno Hajdu <jeno.hajdu@ericsson.com> 1366211848 -0700	pull /home/ejenhaj/yssrsim/: Fast-forward
+python/yssrsim/.git/logs/refs/heads/master:c9134d48e7ecfe4694c67e2cb00d2b677699e5cb 23b823a4c7795fa6ea7989fd57a9c79721282b5c Jeno Hajdu <jeno.hajdu@ericsson.com> 1368098773 -0700	commit: Added missed changed for username handling
+python/yssrsim/.git/logs/refs/heads/master:a76c5eef45495e19e07d9f0847d3ee97029537fa 10c7e9c21abc7321a299294dceeddf317e189fdf Jeno Hajdu <jeno.hajdu@ericsson.com> 1368109900 -0700	commit: Added missed changed for username handling
+python/yssrsim/.git/logs/refs/heads/master:694c1497134d7e3a96a77ed1c98ced188fc46255 d36d7ad1f5fd13e32470be918292204d77ae4e2b Jeno Hajdu <jeno.hajdu@ericsson.com> 1369836842 -0700	commit: Error handling for using %PROJ% in image path
+python/yssrsim/.git/logs/refs/heads/master:f5f28e52812c86568a425c0cf9eaf8a1d1c789f8 239a97e3f07c3b9b402a3f19f31c77429cd2aabf Jeno Hajdu <jeno.hajdu@ericsson.com> 1371839549 -0700	commit: Add proper CLI option handling, add --beam-me-up-scottie option to fire up one xterm for each RPSW with SSHing onto them
+python/yssrsim/.git/logs/HEAD:5a33cb841b96575730fb1095ae89267390d65a71 e5ce1c8638613d1a58cd223369946395aa513b0d Jeno Hajdu <jeno.hajdu@ericsson.com> 1364209946 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:e5ce1c8638613d1a58cd223369946395aa513b0d 907cb68d2eeca48a14b8e1231d89d886ab674a83 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364228699 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/HEAD:907cb68d2eeca48a14b8e1231d89d886ab674a83 11ab2f937156d36e84b51e390c3d462df43a8bde Jeno Hajdu <jeno.hajdu@ericsson.com> 1364229142 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/HEAD:11ab2f937156d36e84b51e390c3d462df43a8bde 36e487bee0a7ec2ed7c0349b30a818744e241720 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364230143 -0700	pull /home/ejenhaj/yssrsim: Fast-forward
+python/yssrsim/.git/logs/HEAD:36e487bee0a7ec2ed7c0349b30a818744e241720 de5c6cae042127f2c535e358bdbce57fc1eca0c2 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364305271 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:de5c6cae042127f2c535e358bdbce57fc1eca0c2 9aa19c4f2029765cef1d3e2e68304ea5aba936d6 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364306037 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:9aa19c4f2029765cef1d3e2e68304ea5aba936d6 635166a38928037f5055bf6344868854fc51e695 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364309534 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:635166a38928037f5055bf6344868854fc51e695 b2510f9f14b07e2362cf071b88050360244a7f35 Jeno Hajdu <jeno.hajdu@ericsson.com> 1364482593 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:b2510f9f14b07e2362cf071b88050360244a7f35 14fd24ba554279a782e071c4e98a85b515a2b700 Jeno Hajdu <jeno.hajdu@ericsson.com> 1365694941 -0700	pull : Fast-forward
+python/yssrsim/.git/logs/HEAD:14fd24ba554279a782e071c4e98a85b515a2b700 d8a4833c8c66ba07317a9c752d7f4cadb6255f81 Jeno Hajdu <jeno.hajdu@ericsson.com> 1366211848 -0700	pull /home/ejenhaj/yssrsim/: Fast-forward
+python/yssrsim/.git/logs/HEAD:c9134d48e7ecfe4694c67e2cb00d2b677699e5cb 23b823a4c7795fa6ea7989fd57a9c79721282b5c Jeno Hajdu <jeno.hajdu@ericsson.com> 1368098773 -0700	commit: Added missed changed for username handling
+python/yssrsim/.git/logs/HEAD:a76c5eef45495e19e07d9f0847d3ee97029537fa 10c7e9c21abc7321a299294dceeddf317e189fdf Jeno Hajdu <jeno.hajdu@ericsson.com> 1368109900 -0700	commit: Added missed changed for username handling
+python/yssrsim/.git/logs/HEAD:694c1497134d7e3a96a77ed1c98ced188fc46255 d36d7ad1f5fd13e32470be918292204d77ae4e2b Jeno Hajdu <jeno.hajdu@ericsson.com> 1369836842 -0700	commit: Error handling for using %PROJ% in image path
+python/yssrsim/.git/logs/HEAD:f5f28e52812c86568a425c0cf9eaf8a1d1c789f8 239a97e3f07c3b9b402a3f19f31c77429cd2aabf Jeno Hajdu <jeno.hajdu@ericsson.com> 1371839549 -0700	commit: Add proper CLI option handling, add --beam-me-up-scottie option to fire up one xterm for each RPSW with SSHing onto them
+python/yssrsim/.git/FETCH_HEAD:4eea08a6e97ddbfa423fff788ed76cee5ff3dac7	not-for-merge	branch 'master' of /project/swbuild5/emtfere/yssrsim
+python/yssrsim/.git/config:	repositoryformatversion = 0
+python/yssrsim/prepsdk.py:    print 'No version for SSR SDK specified, aborting'
+python/yssrsim/prepsdk.py:        print 'Image for version %s not found in swfeature_int, looking at REL_IPOS_* directories' % version
+python/yssrsim/prepsdk.py:        for entry in os.listdir('/home/sysbuild/images'):
+python/yssrsim/prepsdk.py:            print 'No image for version %s found under /home/sysbuild/images/swfeature_int or /home/sysbuild/images/REL_IPOS_*, aborting' % version
+python/yssrsim/sample.cfg:# use the following option to specify an alternative user ID for the SSR-SIM host
+python/yssrsim/sample.cfg:# for example %USER%_%DATE% -> eabcdef_18032013
+python/yssrsim/setup-ssrsim-ssh:send "for FILE in *; do mv /usr/lib/siara/bin/\$FILE /usr/lib/siara/bin/\$FILE.orig; "
+python/yssrsim/ssrsim-ssh-copy-id-exp:        puts "Timedout waiting for response.\n"
+python/yssrsim/yssrsim.py:        for each RPSW with SSH onto the RPSW and exec_cli started
+python/yssrsim/yssrsim.py:\033[1m--help\033[0m - print usage information instead of deploying
+python/yssrsim/yssrsim.py:\033[1mConfiguration file format\033[0m
+python/yssrsim/yssrsim.py:The configuration file uses the regular INI file format.
+python/yssrsim/yssrsim.py:\033[1mbasename\033[0m - the basename used for naming chassis and cards, it can contain
+python/yssrsim/yssrsim.py:        has finished, for example to automatically run some tests, commandline
+python/yssrsim/yssrsim.py:        used for each chassis if not overriden explicitly (also for some
+python/yssrsim/yssrsim.py:        one per line, for each the local path and remote path should be given,
+python/yssrsim/yssrsim.py:        in the path and will be replaced with the defined chassis ID for each chassis
+python/yssrsim/yssrsim.py:        the local will be concatenated (for example copy of a file is specified
+python/yssrsim/yssrsim.py:        for all [global config] parameters except version and image
+python/yssrsim/yssrsim.py:        named: <lower case slot name>_<basename>_<chassis id>, for example if
+python/yssrsim/yssrsim.py:        the specific chassis's ID is 1 and an rpsw is specified for slot RPSW1,
+python/yssrsim/yssrsim.py:\033[1mbridge\033[0m - bridge specs, one per line, in the form of
+python/yssrsim/yssrsim.py:         be used in the SSR-SIM, the end point definition format is
+python/yssrsim/yssrsim.py:- the tool expects that the slot for a given card is empty (or that the given
+python/yssrsim/yssrsim.py:    for card in config.get(section, 'cards').split('\n'):
+python/yssrsim/yssrsim.py:        # ssr-sim start waits for the user to press something, which blocks the python script, hence this proxy shell script
+python/yssrsim/yssrsim.py:        print "Waiting for %s secs while the chassis boots up" % delay
+python/yssrsim/yssrsim.py:    for bridge in config.get('wiring', 'bridge').split('\n'):
+python/yssrsim/yssrsim.py:        # An alternative for bridge naming? Instead of explicit naming use hash of a
+python/yssrsim/yssrsim.py:        # systematically generated name (unfortunately bridge names are capped at 12 chars)
+python/yssrsim/yssrsim.py:        for end_point in bridge_items[1:]:
+python/yssrsim/yssrsim.py:    print '\033[1mSetting up convenient SSH for %s (passwordless login and Host entry in ~/.ssh/config)\033[0m' % rpsw
+python/yssrsim/yssrsim.py:    for i in list:
+python/yssrsim/yssrsim.py:    print '\033[1mCopying libraries for replacement\033[0m'
+python/yssrsim/yssrsim.py:    for line in list:
+python/yssrsim/yssrsim.py:        for lib in line.split(' '):
+python/yssrsim/yssrsim.py:    print '\033[1mCopying binaries for replacement\033[0m'
+python/yssrsim/yssrsim.py:    for bin in list:
+python/yssrsim/yssrsim.py:# dict variant for ConfigParser to be able to separate multiple [chassis] sections
+python/yssrsim/yssrsim.py:for i in general_defs:
+python/yssrsim/yssrsim.py:for i in global_config_defs:
+python/yssrsim/yssrsim.py:    print "\033[1mSSH public keyfile %s missing, but it is required for setting up passwordless login for RPSWs, aborting, you can specify other keyfile with the 'keyfile' option in the [general] section\033[0m" % keyfile
+python/yssrsim/yssrsim.py:for s in config.sections():
+python/yssrsim/yssrsim.py:        for i in global_config_defs:
+python/yssrsim/yssrsim.py:        for id in ids:
+python/yssrsim/yssrsim.py:            for rpsw in new_rpsws:
+python/yssrsim/yssrsim.py:            for rpsw in rpsws:
+python/yssrsim/yssrsim.py:    for rpsw in all_rpsws:
+python/ecpconnect.py:    print onpath.before
+python/ecpconnect.py:    print onpath.before
+python/ecpconnect.py:    print onpath.before
+python/ecpconnect.py:    onpath.sendline ('conn port ' + port1 + ' to ' + port2 + ' force')
+python/ecpconnect.py:    print onpath.before
+python/gprof2dot.py:# GNU Lesser General Public License for more details.
+python/gprof2dot.py:    def __init__(self, name, null, aggregator, formatter = str):
+python/gprof2dot.py:        self._formatter = formatter
+python/gprof2dot.py:    def format(self, val):
+python/gprof2dot.py:        return self._formatter(val)
+python/gprof2dot.py:    """Base class for all objects in profile which can store events."""
+python/gprof2dot.py:    There should be at most one call object for every pair of functions.
+python/gprof2dot.py:        """Remove extraneous information from C++ demangled function names."""
+python/gprof2dot.py:            for other in function.cycle.functions:
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for callee_id in function.calls.keys():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for cycle in cycles:
+python/gprof2dot.py:                for member in cycle.functions:
+python/gprof2dot.py:        for n in visited:
+python/gprof2dot.py:        for f in self.functions.keys():
+python/gprof2dot.py:            for n in self.functions[f].calls.keys():
+python/gprof2dot.py:        for n in path:
+python/gprof2dot.py:            for c in f.calls.keys():
+python/gprof2dot.py:        for f in self.functions:
+python/gprof2dot.py:        for call in function.calls.itervalues():
+python/gprof2dot.py:                for member in members:
+python/gprof2dot.py:        # Aggregate for incoming calls
+python/gprof2dot.py:        for cycle in self.cycles:
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        # Aggregate the input for each cycle 
+python/gprof2dot.py:        for cycle in self.cycles:
+python/gprof2dot.py:            for function in self.functions.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:                for call in function.calls.itervalues():
+python/gprof2dot.py:            # Compute the outevent for the whole cycle
+python/gprof2dot.py:            for member in cycle.functions:
+python/gprof2dot.py:                for call in member.calls.itervalues():
+python/gprof2dot.py:            for function in self.functions.itervalues():
+python/gprof2dot.py:                    for call in function.calls.itervalues():
+python/gprof2dot.py:            for member in cycle.functions:
+python/gprof2dot.py:            for callee, call_ratio in callees.iteritems():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        """Aggregate an event for the whole profile."""
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        for function_id in self.functions.keys():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for callee_id in function.calls.keys():
+python/gprof2dot.py:        for function in self.functions.itervalues():
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:        for cycle in self.cycles:
+python/gprof2dot.py:            for function in cycle.functions:
+python/gprof2dot.py:        for event, value in events.iteritems():
+python/gprof2dot.py:            sys.stderr.write('    %s: %s\n' % (event.name, event.format(value)))
+python/gprof2dot.py:        # TODO: store more source line information
+python/gprof2dot.py:    """Base class for parsers that read line-based formats."""
+python/gprof2dot.py:    """Parser for GNU gprof output.
+python/gprof2dot.py:        for name, value in groupdict.iteritems():
+python/gprof2dot.py:        for line in lines[1:]:
+python/gprof2dot.py:        while line != '\014': # form feed
+python/gprof2dot.py:        for index in self.cycles.iterkeys():
+python/gprof2dot.py:        for entry in self.functions.itervalues():
+python/gprof2dot.py:            for child in entry.children:
+python/gprof2dot.py:        for cycle in cycles.itervalues():
+python/gprof2dot.py:    """Parser for valgrind's callgrind tool.
+python/gprof2dot.py:    - http://valgrind.org/docs/manual/cl-format.html
+python/gprof2dot.py:        for i in range(self.num_positions):
+python/gprof2dot.py:    """Parser for linux perf callgraph output.
+python/gprof2dot.py:        perf script | gprof2dot.py --format=perf
+python/gprof2dot.py:        for caller in callchain[1:]:
+python/gprof2dot.py:    """Parser for oprofile callgraph output.
+python/gprof2dot.py:    - http://oprofile.sourceforge.net/doc/opreport.html#opreport-callgraph
+python/gprof2dot.py:        'linenr info': r'(?P<source>\(no location information\)|\S+:\d+)',
+python/gprof2dot.py:        for partial in partials.itervalues():
+python/gprof2dot.py:        for _callers, _function, _callees in self.entries.itervalues():
+python/gprof2dot.py:            for _callee in _callees.itervalues():
+python/gprof2dot.py:            for _callee in _callees.itervalues():
+python/gprof2dot.py:        entry_re = r'^\s*' + r'\s+'.join([self._fields_re[field] for field in fields]) + r'(?P<self>\s+\[self\])?$'
+python/gprof2dot.py:        if 'source' in fields and fields['source'] != '(no location information)':
+python/gprof2dot.py:    """Parser for java hprof output
+python/gprof2dot.py:        for id, trace in self.traces.iteritems():
+python/gprof2dot.py:            for func, file, line in trace:
+python/gprof2dot.py:        for id, object in objects.iteritems():
+python/gprof2dot.py:        for id, node in nodes.iteritems():
+python/gprof2dot.py:    """Parser for MacOSX Shark output.
+python/gprof2dot.py:        for _function, _callees in self.entries.itervalues():
+python/gprof2dot.py:            for _callee in _callees.itervalues():
+python/gprof2dot.py:    """Parser for CSVs generted by XPerf, from Microsoft Windows Performance Tools.
+python/gprof2dot.py:        for row in it:
+python/gprof2dot.py:        for column in range(len(row)):
+python/gprof2dot.py:        for name, column in self.column.iteritems():
+python/gprof2dot.py:            for factory in int, float:
+python/gprof2dot.py:            for symbol in stack[1:]:
+python/gprof2dot.py:    """Parser for GNU gprof output.
+python/gprof2dot.py:    - http://sleepygraph.sourceforge.net/
+python/gprof2dot.py:        for line in lines:
+python/gprof2dot.py:        for line in lines:
+python/gprof2dot.py:            callstack = [self.symbols[symbol_id] for symbol_id in callstack]
+python/gprof2dot.py:            for caller in callstack[1:]:
+python/gprof2dot.py:        for column in range(len(fields)):
+python/gprof2dot.py:        for values, children in self.rows:
+python/gprof2dot.py:            for name, value in zip(self.fields, values):
+python/gprof2dot.py:            children = dict([(child.name, child) for child in children])
+python/gprof2dot.py:        for fields, tables in results:
+python/gprof2dot.py:            for fields, _ in children:
+python/gprof2dot.py:        for fn, (cc, nc, tt, ct, callers) in self.stats.stats.iteritems():
+python/gprof2dot.py:            for fn, value in callers.iteritems():
+python/gprof2dot.py:                    for i in xrange(0, len(value), 4):
+python/gprof2dot.py:    """Writer for the DOT language.
+python/gprof2dot.py:        for function in profile.functions.itervalues():
+python/gprof2dot.py:            for event in TOTAL_TIME_RATIO, TIME_RATIO:
+python/gprof2dot.py:                    label = event.format(function[event])
+python/gprof2dot.py:            for call in function.calls.itervalues():
+python/gprof2dot.py:                for event in TOTAL_TIME_RATIO, CALLS:
+python/gprof2dot.py:                        label = event.format(call[event])
+python/gprof2dot.py:        for name, value in attrs.iteritems():
+python/gprof2dot.py:        return "#" + "".join(["%02x" % float2int(c) for c in (r, g, b)])
+python/gprof2dot.py:            '-f', '--format',
+python/gprof2dot.py:            dest="format", default="prof",
+python/gprof2dot.py:            help="profile format: prof, callgrind, oprofile, hprof, sysprof, shark, sleepy, aqtime, pstats, or xperf [default: %default]")
+python/gprof2dot.py:        if len(self.args) > 1 and self.options.format != 'pstats':
+python/gprof2dot.py:        if self.options.format in stdinFormats:
+python/gprof2dot.py:            parser = stdinFormats[self.options.format](fp)
+python/gprof2dot.py:        elif self.options.format == 'pstats':
+python/gprof2dot.py:                parser.error('at least a file must be specified for pstats input')
+python/gprof2dot.py:        elif self.options.format == 'sleepy':
+python/gprof2dot.py:                parser.error('exactly one file must be specified for sleepy input')
+python/gprof2dot.py:            parser.error('invalid format \'%s\'' % self.options.format)
+python/jloader.py:for opt, arg in opts:
+python/jloader.py:        # TODO check format for user/pwd
+python/jloader.py:        # TODO check for sdk
+python/jloader.py:    images = cli.before.split('\r\n')[1].split()
+python/jloader.py:    for image in images:
+python/jlog.py:for opt, arg in opts:
+python/jlog.py:        # check format for user/pwd
+python/jprofiler.py:for command in commands:
+python/jssrsim.py:#Globals for all simulators
+python/jssrsim.py:    print "%10s:\t%s" % ("--prepare", "prepare the image for ssr-sim")
+python/jssrsim.py:    print "%10s:\t%s" % ("--access", "prints login information")
+python/jssrsim.py:for arg in sys.argv[1:num_args]: 
+python/temp.log:      ---  RIB Global Counters Information  --- Apr 7 18:44:22.800
+python/topology.py:    'Class for Bridge'
+python/topology.py:        for wireup in self.wireups:
+python/topology.py:        for wireup in self.wireups:
+python/topology.py:        for wireup in self.wireups:
+python/topology.py:    'Class for Chassis'
+python/topology.py:        for num in range(0, num_rps):
+python/topology.py:        for num in range(0, num_lcs):
+python/topology.py:        for rp in self.rps:
+python/topology.py:        for lc in self.lcs:
+python/topology.py:        for rp in self.rps:
+python/topology.py:        for lc in self.lcs:
+python/topology.py:    '''Class for Topology'''
+python/topology.py:        for i in range(num_chassis):
+python/topology.py:        for i in range(len(connections)):
+python/topology.py:            for j in range(len(chs)):
+python/topology.py:        for wire in wireups:
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:        for bridge in self.bridges:
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:        for bridge in self.bridges:
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:            Calls the sdk script for cleanup. If toplogy is already created, 
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:        for line in fp:
+python/topology.py:        for line in new_lines:
+python/topology.py:        for line in fp:
+python/topology.py:        for chassis in self.chasses:
+python/topology.py:        for bridge in self.bridges:
+Binary file python/jchassis.pyc matches
+Binary file python/topology.pyc matches
+Binary file python/jlog.pyc matches
+python/jchassis.py:                'RSA host key for ',
+python/jchassis.py:                    print ('RSA host key changed, removing key for '+self.chassisname+' from /home/'+signum+'/.ssh/known_hosts')
+python/jchassis.py:                    # Warning: the RSA host key for 'esv-ssr-006.eld' differs
+python/jchassis.py:                    # from the key for the IP address '10.126.142.174'
+python/jchassis.py:                    # Offending key for IP in /home/ejitkol/.ssh/known_hosts:74
+python/jchassis.py:                    hostkey_line = self.cli.before.strip().splitlines()[19].strip().split(':')[1].strip()
+python/jchassis.py:            print "Before: ", self.cli.before
+python/jchassis.py:            print "Before: ", self.cli.before
+python/jchassis.py:            for self.run in range(0, self.runs):
+python/jchassis.py:                for command in commands:
+python/jchassis.py:            print "Before: ", self.cli.before
+python/jchassis.py:            print "Before: ", self.cli.before
+python/jchassis.py:                ftp_password = getpass.getpass('Enter ftp password for ' + signum + '@10.10.10.22: ')
+python/jchassis.py:                print self.cli.before, self.cli.match, self.cli.after
+python/jchassis.py:                print ('Sleeping for 1 min')
+Binary file python/jcommands.pyc matches
+python/jcommands.py:    for slot in slots:
+python/jcommands.py:    for slot in slots:
+python/jcommands.py:def get_commands_for_prefix_to_and_from_rib (prefix, fabl_slots=[], ppa_slots=[]):
+python/jcommands.py:        for slot in fabl_slots:
+python/jcommands.py:        for slot in ppa_slots:
+python/jcommands.py:        for slot in fabl_slots:
+python/jcommands.py:        for slot in ppa_slots:
+python/jcommands.py:    for slot in fabl_slots:
+python/jcommands.py:    for slot in ppa_slots:
+python/temp2.log:and E-mail, are provided for authorized users only. For legal, security and
+python/temp2.log:in log files.  All information (whether business or personal) that is created,
+python/results.txt:=> conn port L3B23-2.2.3 to L3B23-2.1.18 force
+Binary file python/.jlog.py.swp matches
+sh/jscope.sh:echo "Sanity check for directories... " 
+sh/jscope.sh:for File in `ls cscope.*`; do
+sh/branch-checkout.sh:    echo "    dir-name        : name of directory for src (e.g. sfi_158980)"
+sh/branch-compile.sh:    echo "    dir-name        : name of directory for src (e.g. sfi_158980)"
+sh/branch-compile.sh:    echo "    build-target    : target for building src (all|SE1200|SE800|SE100)"
+sh/branch-compile.sh:echo  "Checking for valid scratch path $SCRATCH_PATH/$BranchDir..."
+sh/branch-compile.sh:    echo "Setting up scratch links for $BranchDir..."
+sh/branch-compile.sh:    #$CMD_PATH/scratch-config fails, force cleanup
+sh/branch-compile.sh:        echo "%    ERROR: scratch setup failed, trying force-cleanup"
+sh/branch-compile.sh:        $CMD_PATH/scratch-config --force-cleanup
+sh/branch-compile.sh:    #$CMD_PATH/scratch-config --, force cleanup
+sh/branch-compile.sh:    #force cleanup fails, try clobber 
+sh/branch-compile.sh:    #    echo "%    ERROR: scratch force cleanup failed, trying clobber"
+sh/branch-compile.sh:        echo "%    ERROR: scratch force-cleanup failed, delete & recreate"
+sh/branch-compile.sh:#building tree for target
+sh/branch-compile.sh:echo "Building tree $BranchDir for target $CompileTarget... "
+sh/branch-compile.sh:for Ifile in `ls *.gz`; do
+sh/branch-compile.sh:    fDate=`stat $Ifile --format='%x' | cut --bytes=1-4,6-7,9-10`    
+sh/branch-compile.sh:        echo "$Ifile - last compiled on `stat $Ifile --format='%x' | cut --bytes=1-10`"
+sh/branch-cscope.sh:    echo "  branch-dir      : name of directory for src (e.g. sfi_158980)"
+sh/branch-cscope.sh:    echo "  root-dir-name   : root directory for cscope (root|rib|pwd)"
+sh/branch-cscope.sh:echo "Sanity check for directories... " 
+sh/branch-cscope.sh:for File in `ls cscope.*`; do
+sh/jclean-repo.sh:        echo "Scratch directory for repo $ScratchDirectory/$Repo not found";
+yssrsim:        for each RPSW with SSH onto the RPSW and exec_cli started
+yssrsim:\033[1m--help\033[0m - print usage information instead of deploying
+yssrsim:\033[1mConfiguration file format\033[0m
+yssrsim:The configuration file uses the regular INI file format.
+yssrsim:\033[1mbasename\033[0m - the basename used for naming chassis and cards, it can contain
+yssrsim:        has finished, for example to automatically run some tests, commandline
+yssrsim:        used for each chassis if not overriden explicitly (also for some
+yssrsim:        one per line, for each the local path and remote path should be given,
+yssrsim:        in the path and will be replaced with the defined chassis ID for each chassis
+yssrsim:        the local will be concatenated (for example copy of a file is specified
+yssrsim:        for all [global config] parameters except version and image
+yssrsim:        named: <lower case slot name>_<basename>_<chassis id>, for example if
+yssrsim:        the specific chassis's ID is 1 and an rpsw is specified for slot RPSW1,
+yssrsim:\033[1mbridge\033[0m - bridge specs, one per line, in the form of
+yssrsim:         be used in the SSR-SIM, the end point definition format is
+yssrsim:- the tool expects that the slot for a given card is empty (or that the given
+yssrsim:    for card in config.get(section, 'cards').split('\n'):
+yssrsim:        # ssr-sim start waits for the user to press something, which blocks the python script, hence this proxy shell script
+yssrsim:        print "Waiting for %s secs while the chassis boots up" % delay
+yssrsim:    for bridge in config.get('wiring', 'bridge').split('\n'):
+yssrsim:        # An alternative for bridge naming? Instead of explicit naming use hash of a
+yssrsim:        # systematically generated name (unfortunately bridge names are capped at 12 chars)
+yssrsim:        for end_point in bridge_items[1:]:
+yssrsim:    print '\033[1mSetting up convenient SSH for %s (passwordless login and Host entry in ~/.ssh/config)\033[0m' % rpsw
+yssrsim:    for i in list:
+yssrsim:    print '\033[1mCopying libraries for replacement\033[0m'
+yssrsim:    for line in list:
+yssrsim:        for lib in line.split(' '):
+yssrsim:    print '\033[1mCopying binaries for replacement\033[0m'
+yssrsim:    for bin in list:
+yssrsim:# dict variant for ConfigParser to be able to separate multiple [chassis] sections
+yssrsim:for i in general_defs:
+yssrsim:for i in global_config_defs:
+yssrsim:    print "\033[1mSSH public keyfile %s missing, but it is required for setting up passwordless login for RPSWs, aborting, you can specify other keyfile with the 'keyfile' option in the [general] section\033[0m" % keyfile
+yssrsim:for s in config.sections():
+yssrsim:        for i in global_config_defs:
+yssrsim:        for id in ids:
+yssrsim:            for rpsw in new_rpsws:
+yssrsim:            for rpsw in rpsws:
+yssrsim:    for rpsw in all_rpsws:

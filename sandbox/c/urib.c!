@@ -1,0 +1,9 @@
+
+typedef struct {
+    routes_db_t routes;
+
+} context_t;
+typedef struct {
+    context_t   contexts[100];
+} contexts_db_t;
+

@@ -1,0 +1,1 @@
+ssh -o ServerAliveInterval=0 ejitkol@gmake01-pduip.sj.us.am.ericsson.se -X

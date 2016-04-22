@@ -1,0 +1,1 @@
+ssh -o ServerAliveInterval=0 ejitkol@lxapp-3.sj.us.am.ericsson.se -X

@@ -1,0 +1,5 @@
+show clock
+show ip route summary all
+show ip route counters global
+
+

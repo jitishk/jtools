@@ -1,0 +1,11 @@
+test@sjl3-ecp-ssr10.eld's password: 
+Last login: Mon Apr  7 18:44:21 2014 from 147.117.60.134
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+test
+[local]sjl3-ecp-ssr10#test
+% Incomplete command: test
+[local]sjl3-ecp-ssr10#

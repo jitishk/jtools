@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ejitkol/sandbox/rtree'
+let g:netrw_dirhist_2='/workspace/git/ejitkol/ipos-evs.repo/comp/forwarding-layer/src'
+let g:netrw_dirhist_3='/workspace/git/ejitkol/ipos-evs.repo/comp/forwarding-layer'
+let g:netrw_dirhist_4='/home/ejitkol/sandbox/c/combinations'
+let g:netrw_dirhist_5='temp'
+let g:netrw_dirhist_6='/workspace/git/ejitkol/ipos-evs.repo/pkt/sw/se/xc/bsd/config/newcsm'
+let g:netrw_dirhist_7='/workspace/git/ejitkol/ipos-evs.repo/pkt/product_targets/REF-MSP'
+let g:netrw_dirhist_8='/workspace/git/ejitkol/ipos-evs.repo/pkt/product_targets'

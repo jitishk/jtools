@@ -1,0 +1,1238 @@
+test@sjl3-ecp-ssr10.eld's password: 
+Last login: Mon Apr  7 18:43:25 2014 from 147.117.60.134
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+test
+[local]sjl3-ecp-ssr10#test
+% Incomplete command: test
+[local]sjl3-ecp-ssr10#terminal length 0
+[local]sjl3-ecp-ssr10#show version
+
+Ericsson IPOS Version IPOS-14.1.21.100.1004-Release
+Built by sysbuild@eussjlx7008.sj.us.am.ericsson.se Fri Apr 4 12:00:42 PDT 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+Operating System version is Linux 3.0.75-1230-g1ae34ce
+System Bootstrap version is OpenFirmware  3.0.2.29  PRODUCTION RELEASE
+Installed minikernel version is v3.0.38-876-g113fd53-2532251
+Router Up Time -  35 minutes 40 seconds
+[local]sjl3-ecp-ssr10#show release
+Active RP (slot RPSW2)
+
+Installed releases:
+
+p02: active (will be booted after next reload)
+----------------------------------------------
+Version IPOS-14.1.21.100.1004-Release
+Built on Fri Apr  4 12:00:42 PDT 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+p02: diagnostics
+----------------
+Version IPOS-14.1.21.100.1004-Release
+Built on Fri Apr  4 12:00:42 PDT 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+p02: VPF Hypervisor
+-------------------
+Version SLES11SP3_ssc_xen-4.1.0-Release
+Built on Fri Mar 28 11:00:00 PST 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+p01: alternate
+--------------
+Version IPOS-14.1.21.100.1004-Release
+Built on Fri Apr  4 12:00:42 PDT 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+p01: diagnostics
+----------------
+Version IPOS-14.1.21.100.1004-Release
+Built on Fri Apr  4 12:00:42 PDT 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+p01: VPF Hypervisor
+-------------------
+Version SLES11SP3_ssc_xen-4.1.0-Release
+Built on Fri Mar 28 11:00:00 PST 2014
+Copyright (C) 1998-2014, Ericsson AB. All rights reserved.
+
+
+[local]sjl3-ecp-ssr10#show clock
+Mon Apr  7 18:44:22 2014 UTC
+[local]sjl3-ecp-ssr10#show process rib detail
+
+Process (PID)       : rib (4476)
+
+Spawn count         : 1
+Memory              : 11488K
+Time                : 00:00:00.35
+%CPU                : 0.00%
+State               : run
+Up time             : 00:33:59
+Heart beat          : Enabled
+Spawn time          : 2 seconds
+Max crashes allowed : 5
+Crash thresh time   : 86400 seconds
+Total crashes       : 0
+Fast restart        : DISABLED
+
+Images: (Spawns, Max spawns, Version, Path)
+  (*)  1, 4, v1, /usr/lib/siara/bin/ribd --no-flush
+
+Client IPC Endpoints:
+    EP 7f02fd01 060029ad - RBNEVT_03_RBOS_FWD_IPC_ALD_@LC.04:00000000
+    EP 7f02fd01 060029ad - RBNEVT_03_PNSD@LC.04:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 05/0@LC.05:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 05/1@LC.05:00000000
+    EP 7f02fd01 060029ad - RBNEVT_04_RBOS_FWD_IPC_ALD_@LC.05:00000000
+    EP 7f02fd01 060029ad - RBNEVT_04_PNSD@LC.05:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 04/0@LC.04:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 04/1@LC.04:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 01/0@LC.01:00000000
+    EP 7f02fd01 100029ad - FIB SLOT 01/1@LC.01:00000000
+    EP 7f02fd01 060029ad - RBNEVT_00_RBOS_FWD_IPC_ALD_@LC.01:00000000
+    EP 7f02fd01 010029ad - SECONDARY-RIB-SYNC-EP:00000000
+    EP 7f02fd01 060029ad - RBNEVT_00_PNSD@LC.01:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_TSM_RP:00000000
+    EP 7f02fd01 0d0029ad - LM-IPC-MSG-EP-NAME:00000000
+    EP 7f02fd01 0d0029ad - STATIC-IPC-RIB-EP-NAME:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_CLI-RCM-LOOKUP-TH:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_ASPD:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_VSMD:00000000
+    EP 7f02fd01 100029ad - ISM2-MBE-EVIN-EP-NAME:00000000
+    EP 7f02fd01 0e0029ad - SNMP-NOTIFY-EP-NAME:00000000
+    EP 7f02fd01 140029ad - VLAN-IPC-EP-NAME:00000000
+    EP 7f02fd01 100029ad - RPM-SERVER-EP-NAME:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_STATD:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_CLASSIFIER:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_ODD-INIT:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_RFM:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_CSM:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_GESWD:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_PAKIO-PROTECT:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_PNSD:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_VX_IPC:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_01.11.CMS:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_VSM_SERVMON:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_FMRD:00000000
+    EP 7f02fd01 120029ad - ARP-IPC-MSG-EP-NAME:00000000
+    EP 7f02fd01 100029ad - ISM2-CLIENT-EP-NAME:00000000
+    EP 7f02fd01 060029ad - RBNEVT_11_RIB:00000000
+    EP 7f02fd01 060029ad - RBN_EVTMD_EP:00000000
+
+Server IPC Endpoints:
+    EP 7f02fd01 130029ad - RIB-IPC-RT-EP-NAME:00000000
+      Dependent process lblmgr (4493) EP 7f02fd01 09009d84
+      Dependent process TSM_RP (4530) EP 7f02fd01 0700afe6
+      Dependent process AAA (4515) EP 7f02fd01 1900caa9
+      Dependent process STATIC (5020) EP 7f02fd01 0300efb4
+      Dependent process LDPd (4512) EP 7f02fd01 0b000ec4
+    EP 7f02fd01 150029ad - RIB-CONF-EP-NAME:00000000
+      Dependent process RCM (4469) EP 7f02fd01 010024cb
+    EP 7f02fd01 100029ad - RIB-IPC-MSG-EP-NAME:00000000
+      Dependent process  (0) EP 7f020401 0a007117
+      Dependent process  (0) EP 7f020301 0a007117
+      Dependent process ISM (4470) EP 7f02fd01 120032d9
+      Dependent process ISM (4470) EP 7f02fd01 100032d9
+      Dependent process RPMD (4472) EP 7f02fd01 0300e0cb
+      Dependent process LDPd (4512) EP 7f02fd01 0b000ec4
+      Dependent process STATIC (5020) EP 7f02fd01 0300efb4
+      Dependent process L2TPd (4924) EP 7f02fd01 10004de9
+      Dependent process AAA (4515) EP 7f02fd01 1900caa9
+      Dependent process AAA (4515) EP 7f02fd01 0100caa9
+      Dependent process ARP-Init (4477) EP 7f02fd01 08007f87
+      Dependent process lblmgr (4493) EP 7f02fd01 09009d84
+      Dependent process TSM_RP (4530) EP 7f02fd01 0700afe6
+      Dependent process loggd (2449) EP 7f02fd01 04007db6
+      Dependent process  (0) EP 7f020001 0a007117
+      Dependent process  (0) EP 7f020301 0b007117
+      Dependent process Tunnel Daemon (4483) EP 7f02fd01 0500a19b
+  (*)  1, 4, v1, /usr/lib/siara/bin/ribd --no-flush
+
+Server IPC Endpoints:
+    EP 7f02fd01 0c0029ad - RBNEVT_11_RIB:00000000
+      Dependent process evtmd (3891) EP 7f02fd01 0300d3eb
+      Dependent process RIB (4476) EP 7f02fd01 060029ad
+    EP 7f02fd01 060029ad - RBNEVT_11_RIB_TX:00000000
+    EP 7f02fd01 050029ad - RBNEVT_11_RIB_NFY:00000000
+[local]sjl3-ecp-ssr10#show process rib ipc detail
+RIB-IPC-MSG-EP-NAME  : 
+	Summary: 
+	-------: 
+	Num. of Client EPs  : 50 
+	Num. of Server EPs  : 64 
+	Packets Sent        : 277 
+	Fragments Sent      : 0 
+	Messages Packed     : 0 
+	Packets Sent Local  : 0 
+	Packets Rcvd        : 184 
+	Fragments Rcvd      : 0 
+	Packets Rcvd Local  : 0 
+	Retries             : 6 
+	Death Rcv           : 9 
+	Reborn Rcv          : 6 
+	Unorder Death Rcv   : 0 
+	Unorder Reborn Rcv  : 0 
+	Unorder Death Fixed : 0 
+	Unorder Reborn Fixed: 0 
+	threadTimeout       : 0 
+
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB) : 7f02fd01 ad290001 
+		Server EP (SECONDARY-RIB-SYNC-EP) : 7f02fc01 e76e0003 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 1
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (*PM 1770:7F02FD01 *) : 7f02fd01 17700002 
+		    # of Pkts Sent  : 6 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 6
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 3 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 3
+	IPC Threads : 
+	=============  
+	Thread  EP (Active-SHM) : 7f02fd01 ad290002 
+		Server EP (SECONDARY-RIB-SYNC-EP) : 7f02fc01 e76e0003 
+		    # of Pkts Sent  : 6 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 6
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-ipc-pack-thread) : 7f02fd01 ad290004 
+		Server EP (ISM2-MBE-EVIN-EP-NAME) : 7f02fd01 d9320010 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RBNEVT_11_RIB_NFY) : 7f02fd01 ad290005 
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RBNEVT_11_RIB_TX) : 7f02fd01 ad290006 
+		Server EP (RBNEVT_03_RBOS_FWD_IPC_ALD_@LC.04) : 7f020301 cb4d0004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_03_PNSD@LC.04) : 7f020301 b4860004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_04_RBOS_FWD_IPC_ALD_@LC.05) : 7f020401 e5d30004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_04_PNSD@LC.05) : 7f020401 becd0005 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_00_RBOS_FWD_IPC_ALD_@LC.01) : 7f020001 b9b30004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_00_PNSD@LC.01) : 7f020001 81f60004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_TSM_RP) : 7f02fd01 e6af0010 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_CLI-RCM-LOOKUP-TH) : 7f02fd01 ab6c000b 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_ASPD) : 7f02fd01 cd0e0004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_VSMD) : 7f02fd01 cf110003 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_STATD) : 7f02fd01 bb530007 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_CLASSIFIER) : 7f02fd01 909f0005 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_ODD-INIT) : 7f02fd01 ac2c0002 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_RFM) : 7f02fd01 8b9d0002 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_CSM) : 7f02fd01 e0a20004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_GESWD) : 7f02fd01 8e530002 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_PAKIO-PROTECT) : 7f02fd01 b03d0003 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_PNSD) : 7f02fd01 b0bf0003 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_VX_IPC) : 7f02fd01 a5f00005 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_01.11.CMS) : 7f02fd01 d68c0006 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_VSM_SERVMON) : 7f02fd01 ea120002 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_FMRD) : 7f02fd01 eb350004 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RBNEVT_11_RIB) : 7f02fd01 ad29000c 
+		    # of Pkts Sent  : 0 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 0
+		Server EP (RBN_EVTMD_EP) : 7f02fd01 ebd30002 
+		    # of Pkts Sent  : 70 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 70
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 38 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 38
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-PIM-THRD) : 7f02fd01 ad290009 
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 3
+		    # of AYASent    : 2 	# of Retries     : 1
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-LC-THREAD) : 7f02fd01 ad29000a 
+		Server EP (FIB SLOT 04/0@LC.04) : 7f020301 9497000c 
+		    # of Pkts Sent  : 7 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 7
+		Server EP (FIB SLOT 04/1@LC.04) : 7f020301 9497000e 
+		    # of Pkts Sent  : 4 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 4
+		Server EP (FIB SLOT 05/0@LC.05) : 7f020401 9daf0008 
+		    # of Pkts Sent  : 7 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 7
+		Server EP (FIB SLOT 05/1@LC.05) : 7f020401 9daf0007 
+		    # of Pkts Sent  : 5 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 5
+		Server EP (FIB SLOT 01/0@LC.01) : 7f020001 b971000e 
+		    # of Pkts Sent  : 9 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 9
+		Server EP (FIB SLOT 01/1@LC.01) : 7f020001 b971000a 
+		    # of Pkts Sent  : 5 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 5
+	IPC Threads : 
+	=============  
+	Thread  EP (RBNEVT_11_RIB) : 7f02fd01 ad29000c 
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+		Client EP (RBN_EVTMD_EP_TX) : 7f02fd01 ebd30003 
+		    # of PktsRcvd   : 110 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 32 	# Seqno          : 111
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-RESTART-THRD) : 7f02fd01 ad29000d 
+		Server EP (LM-IPC-MSG-EP-NAME) : 7f02fd01 849d000f 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (STATIC-IPC-RIB-EP-NAME) : 7f02fd01 b4ef0003 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 8 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 8
+		Server EP (ISM2-MBE-EVIN-EP-NAME) : 7f02fd01 d9320010 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+		Server EP (ISM2-CLIENT-EP-NAME) : 7f02fd01 d932000c 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-XMT-WORKER) : 7f02fd01 ad29000e 
+		Server EP (LM-IPC-MSG-EP-NAME) : 7f02fd01 849d000f 
+		    # of Pkts Sent  : 5 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 5
+		Server EP (STATIC-IPC-RIB-EP-NAME) : 7f02fd01 b4ef0003 
+		    # of Pkts Sent  : 4 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 1 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 4
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-MSG-THRD) : 7f02fd01 ad290010 
+		Server EP (FIB SLOT 04/0@LC.04) : 7f020301 9497000c 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 1 	# of RebornSent  : 1
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (FIB SLOT 04/1@LC.04) : 7f020301 9497000e 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 1 	# of RebornSent  : 1
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (FIB SLOT 05/0@LC.05) : 7f020401 9daf0008 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (FIB SLOT 05/1@LC.05) : 7f020401 9daf0007 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (FIB SLOT 01/0@LC.01) : 7f020001 b971000e 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (FIB SLOT 01/1@LC.01) : 7f020001 b971000a 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (ISM2-MBE-EVIN-EP-NAME) : 7f02fd01 d9320010 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 1
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (RPM-SERVER-EP-NAME) : 7f02fd01 cbe00003 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+		Server EP (ISM2-CLIENT-EP-NAME) : 7f02fd01 d932000c 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 13 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 13
+		Client EP (CLI-20162) : 7f02fd01 954e0001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 4
+		Client EP (Fib Ingress Worker) : 7f020301 94970007 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (Fib Egress Worker) : 7f020301 9497000d 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (FIB SLOT 04/0) : 7f020301 9497000c 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (FIB SLOT 04/1) : 7f020301 9497000e 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (bfd-fabl_SLOT_03) : 7f020301 d4cf0001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (Fib Ingress Worker) : 7f020401 9daf000d 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (Fib Egress Worker) : 7f020401 9daf000a 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (FIB SLOT 05/1) : 7f020401 9daf0007 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (FIB SLOT 05/0) : 7f020401 9daf0008 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (bfd-fabl_SLOT_04) : 7f020401 d3140001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (RP.ACTIVE) : 7f020401 1771000a 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (Fib Ingress Worker) : 7f020001 b9710007 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (Fib Egress Worker) : 7f020001 b9710008 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (FIB SLOT 04/0) : 7f020301 8ef00007 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (FIB SLOT 04/1) : 7f020301 8ef0000b 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (bfd-fabl_SLOT_03) : 7f020301 e2070001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (RP.ACTIVE) : 7f020301 1771000a 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (FIB SLOT 01/1) : 7f020001 b971000a 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (FIB SLOT 01/0) : 7f020001 b971000e 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (bfd-fabl_SLOT_00) : 7f020001 83010001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (RP.ACTIVE) : 7f020001 1771000a 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/system/ntp/linux/src/ntp_conf.c) : 7f02fd01 a27b0006 
+		    # of PktsRcvd   : 33 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 34
+		Client EP (lm-ipc-pack-thread) : 7f02fd01 849d0002 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (STATIC) : 7f02fd01 b4ef0001 
+		    # of PktsRcvd   : 3 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 4
+		Client EP (Event-Out) : 7f02fd01 d9320013 
+		    # of PktsRcvd   : 2 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 2 	# Seqno          : 3
+		Client EP (Update) : 7f02fd01 d9320012 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (MBE) : 7f02fd01 d9320010 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (ntpd_mon) : 7f02fd01 a27b0001 
+		    # of PktsRcvd   : 3 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 4
+		Client EP (sw/se/xc/bsd/system/ntp/linux/src/ntp_conf.c) : 7f02fd01 a27b0005 
+		    # of PktsRcvd   : 1 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 2
+		Client EP (sw/se/xc/bsd/system/rpmd/src/rpm_server.c) : 7f02fd01 cbe00003 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/routing/mpls/ldp/src/ldp_rib.c) : 7f02fd01 c40e000b 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/routing/staticd/src/static_rib.c) : 7f02fd01 b4ef0003 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (l2tp-rib-thread) : 7f02fd01 e94d0010 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (AAA-ROUTE-DOWNLOAD-THRD) : 7f02fd01 a9ca0019 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (AAA) : 7f02fd01 a9ca0001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/config/arp/src/arp_utils.c) : 7f02fd01 877f0008 
+		    # of PktsRcvd   : 3 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 3 	# Seqno          : 4
+		Client EP (sw/se/xc/bsd/routing/mpls/lm/src/lm_fec.c) : 7f02fd01 849d0009 
+		    # of PktsRcvd   : 7 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 1 	# Seqno          : 8
+		Client EP (sw/se/xc/bsd/comp/tsm/tsmrib/src/tsmrib.c) : 7f02fd01 e6af0007 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (tunnel-rib-thread) : 7f02fd01 9ba10005 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (LOGG-RIB-EP-NAME) : 7f02fd01 b67d0004 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-ARP-THRD) : 7f02fd01 ad290012 
+		Server EP (ARP-IPC-MSG-EP-NAME) : 7f02fd01 877f0006 
+		    # of Pkts Sent  : 3 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 1
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 3
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 3 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 3
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-RTRCV-THRD) : 7f02fd01 ad290013 
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+		Client EP (sw/se/xc/bsd/routing/mpls/lm/src/lm_worker.c) : 7f02fd01 849d000e 
+		    # of PktsRcvd   : 8 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 8 	# Seqno          : 9
+		Client EP (STATIC) : 7f02fd01 b4ef0001 
+		    # of PktsRcvd   : 3 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 3 	# Seqno          : 4
+		Client EP (sw/se/xc/bsd/routing/mpls/ldp/src/ldp_rib.c) : 7f02fd01 c40e000b 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/routing/staticd/src/static_rib.c) : 7f02fd01 b4ef0003 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (AAA-ROUTE-DOWNLOAD-THRD) : 7f02fd01 a9ca0019 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/comp/tsm/tsmrib/src/tsmrib.c) : 7f02fd01 e6af0007 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+		Client EP (sw/se/xc/bsd/routing/mpls/lm/src/lm_fec.c) : 7f02fd01 849d0009 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-BRIDGE-THRD) : 7f02fd01 ad290014 
+		Server EP (VLAN-IPC-EP-NAME) : 7f02fd01 dc26000e 
+		    # of Pkts Sent  : 1 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 1
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 1
+		    # of AYASent    : 0 	# of Retries     : 1
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-RCM-THRD) : 7f02fd01 ad290015 
+		Server EP (*NS 1771:7F02FD01 *) : 7f02fd01 17710002 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+		Client EP (RCM) : 7f02fd01 cb240001 
+		    # of PktsRcvd   : 0 	# of Truncated   : 0
+		    # of FragsRcvd  : 0
+		    # of IAASent    : 0 	# of AYARcvd     : 0
+		    # of SeqErrs    : 0 	# of DupReply    : 0
+		    # msg           : 0 	# Seqno          : 1
+	IPC Threads : 
+	=============  
+	Thread  EP (RIB-RTPROC-THRD) : 7f02fd01 ad290016 
+		Server EP (ARP-IPC-MSG-EP-NAME) : 7f02fd01 877f0006 
+		    # of Pkts Sent  : 2 	# of MsgSeqHoles : 0
+		    # of Msgs Packed: 0 	# of Frags Sent  : 0
+		    # of Truncated  : 0 	# of BadEPPkts   : 0
+		    # of AsyncBlock : 0 	# of IAARcvd     : 0
+		    # of AYASent    : 0 	# of Retries     : 0
+		    # of DeathSent  : 0 	# of RebornSent  : 0
+		    send q size     : 0 	send q high wtr  : 0
+		    # msg           : 0 	# Seqno          : 2
+[local]sjl3-ecp-ssr10#show process rib thread-info
+
+NAME                                     STATE                PR    FLAG      UTIME  STIME  CTX-SW
+RIB-MAIN                                 0                    20    4202752   0.01   0.00   68
+ipcThrd                                  0                    20    4202560   0.08   0.11   2993
+shmlib_sync_to_standby                   0                    20    4202560   0.00   0.00   11
+sighandler_work                          0                    20    4202560   0.00   0.00   14
+sighandler_catch                         0                    20    4202560   0.00   0.00   7
+ipc-pack                                 0                    20    4202560   0.00   0.00   8
+RBNEVT_EPMON                             0                    20    4202560   0.00   0.00   72
+RBNEVT_RX                                0                    20    4202560   0.00   0.00   224
+RBNEVT_TX                                0                    20    4202560   0.01   0.00   235
+RBNEVT_NFY                               0                    20    4202560   0.00   0.00   10
+RIB-TIMER                                0                    20    4202560   0.00   0.00   72
+RIB-DEL-WALKER                           0                    20    4202560   0.00   0.00   155
+RIB-ARP-WORKER                           0                    20    4202560   0.00   0.00   24
+RIB-BRIDGE                               0                    20    4202560   0.00   0.00   8
+RIB-RT-WORKER                            0                    20    4202560   0.00   0.00   42
+RIB-RT-REDIST-WORKER                     0                    20    4202560   0.00   0.00   56
+RIB-RECURSION                            0                    20    4202560   0.00   0.00   11
+RIB-KERNEL-WORKER                        0                    20    4202560   0.00   0.00   161
+RIB-PIM-WORKER                           0                    20    4202560   0.00   0.00   25
+RIB-FIB-THREAD                           0                    20    4202560   0.00   0.00   69
+RIB-LC-THREAD                            0                    20    4202560   0.00   0.00   83
+RIB-MONITOR-THREAD                       0                    20    4202560   0.00   0.06   2050
+RIB-RESTART-WORKER                       0                    20    4202560   0.00   0.00   99
+RIB-LIBSO                                0                    20    4202560   0.00   0.00   5
+RIB-XMT-WORKER                           0                    20    4202560   0.00   0.00   32
+RIB-MO-RCM                               0                    20    4202560   0.00   0.00   11
+RIB-RT-RCV                               0                    20    4202560   0.00   0.00   33
+RIB-IPC-MSG                              0                    20    4202560   0.00   0.00   203
+[local]sjl3-ecp-ssr10#show ip route counters global
+
+      ---  RIB Global Counters Information  --- Apr 7 18:44:22.800
+
+
+RIB global events:
+RIB_EVENT_GLOBAL_PPA_MSG_SENT                     :              69
+RIB_EVENT_GLOBAL_PPA_WALKER_LOOP                  :              19
+RIB_EVENT_GLOBAL_NH_SHM_INS                       :               3
+RIB_EVENT_GLOBAL_ALLOCATE_PPA_IPC_BUF             :              10
+RIB_EVENT_GLOBAL_FLUSH_PPA_IPC_BUF                :              10
+RIB_EVENT_GLOBAL_ALLOC_NEW_IPC_BUF_NEW_SLOT_MASK  :               8
+RIB_EVENT_GLOBAL_LOGG_EVENT                       :               2
+RIB_EVENT_GLOBAL_KERNEL_GATEWAY_IPV4_RT_ADD       :               8
+RIB_EVENT_GLOBAL_KERNEL_MGMT_IPV4_RT_ADD          :               1
+RIB_EVENT_GLOBAL_BFD_NO_INTF1_WALK                :               4
+RIB_EVENT_GLOBAL_WALK_CNTXT_TREE                  :              21
+RIB_EVENT_GLOBAL_WALK_CCT_TBL_HEAD                :               2
+RIB_EVENT_GLOBAL_WALK_RT_TBL_HEAD                 :              41
+RIB_EVENT_GLOBAL_WALK_L2_VPN_RT_TBL_HEAD          :               4
+RIB_EVENT_GLOBAL_WALK_L3_FIB_SKIPPED_HEAD         :               4
+RIB_EVENT_GLOBAL_WALK_L2_FIB_SKIPPED_HEAD         :               4
+RIB_EVENT_GLOBAL_WALK_NH_TBL_HEAD                 :              43
+RIB_EVENT_GLOBAL_WALK_NH_RES_TBL_HEAD             :               3
+RIB_EVENT_GLOBAL_WALK_BFD_SESSION_HEAD            :              18
+RIB_EVENT_GLOBAL_WALK_STALE_SESSION_HEAD          :               1
+RIB_EVENT_GLOBAL_WALK_FIB_CACHE_TBL_HEAD          :               4
+
+IPC rcv messages:
+IPC_COMMAND_RIB_START                             :              11
+IPC_RIB_ARP_UPLOAD                                :               1
+IPC_RIB_PPA_MSG                                   :              16
+IPC_RIB_SRC_ADDR_QUE                              :              37
+IPC_RIB_RT_ADD                                    :               2
+IPC_RIB_ARP_MSG                                   :               2
+IPC_RIB_REG_REQ                                   :               7
+IPC_RIB_NH_QUE                                    :               1
+IPC_RIB_EOF_CONFIG                                :               1
+IPC_RIB_CNTXT_ADD                                 :               1
+IPC_RIB_SHW_IP_RT_COUNTERS                        :               1
+IPC_RIB_EOF                                       :              23
+IPC_COMMAND_INVALID                               :               1
+RIB_EVENT_GLOBAL_IPC_ISM2_EVENT_NOTIFY_RCV        :               2
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_IPC_RIB_RT_ADD_ADD   :               4
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_RIB_INTERNAL_MSG_RT_CLEANUP_FOR_CNTXT:              11
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_RIB_NH_QUE_ALL       :               1
+RIB_EVENT_GLOBAL_IPC_MSG_RCV_RIB_L2_PREFIX_REG_ALL:              37
+
+ISM2 recv messages:
+ISM2_ID_IF_STATE                                  :               3
+ISM2_ID_IF_IPCFG                                  :               1
+ISM2_ID_IF_CFG                                    :               1
+ISM2_ID_CCT_STATE                                 :               2
+ISM2_ID_CCT_CFG                                   :               1
+ISM2_ID_HDR_ONLY                                  :               1
+
+IPC sent messages:
+IPC_COMMAND_RIB_START                             :              11
+IPC_RIB_NH_RES_CHG                                :               1
+RIB_EVENT_GLOBAL_IPC_COMMAND_ARP_ND_SENT          :               4
+RIB_EVENT_GLOBAL_IPC_COMMAND_ISM2_CLIENT_REG_SENT :               1
+
+FIB messages:
+                                                 Independent / Total downloads
+FIB_ROUTE_ADD                                :              36              36
+FIB_CNH_ADD                                  :              15              18
+PPA_REG                                      :               8               8
+FIB_TBL_ADD                                  :              16              16
+FIB_MGMT_FLG_RMV                             :               8               8
+FIB_UPLOAD_MAC                               :               3               3
+FIB_HASH_CFG                                 :               4               4
+FIB_APP_EOF                                  :               8               8
+
+Slot events:
+RIB_EVENT_SLOT_IPC_SEND                           :              31
+RIB_EVENT_SLOT_IPC_BLOCKED                        :               4
+RIB_EVENT_SLOT_SYNC_ADD                           :               3
+
+Timers:
+RIB_STALE_TIMER                                   :               1
+RIB_REDIST_SEND_END_MARKER_TIMER                  :               1
+RIB_LAST_RESORT_EOF_TIMER                         :               5
+RIB_REG_GRACE_TIMER                               :               1
+
+Routes ops by the client types                                  add             del
+RIB_PROTO_STATIC                                  :               4               0
+
+ARP messages
+ARP_RESOLVE_ADDR                                  :               1
+ARP_RIB_READY                                     :               1
+ARP_READY_QUERY                                   :               1
+RIB_ARP_READY                                     :               1
+RIB_READY_QUERY                                   :               1
+
+ND messages
+[local]sjl3-ecp-ssr10#

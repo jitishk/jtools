@@ -1,0 +1,39 @@
+Trying 10.126.142.148...
+Connected to sjl3-ecp-ssr26.eld.
+Escape character is '^]'.
+login: test
+test
+Password: test
+
+
+Welcome to Ericsson IPOS
+Copyright (c) 2011 Ericsson AB.
+All rights reserved.
+
+[local]sjl3-ecp-ssr26>en
+en
+Password: test
+
+[local]sjl3-ecp-ssr26#terminal length 0
+terminal length 0
+[local]sjl3-ecp-ssr26#show bindings
+show bindings
+Circuit                          State Encaps           Bind Type  Bind Name
+
+1/13                             Up    ethernet         interface  ton2x-+@vpn-1
+1/14                             Up    ethernet                    
+11/1                             Up    ethernet         interface  mgmt@local
+lg id 1 link_group1              Down  ethernet                    
+lg id 1 vlan-id 800              Down  eth dot1q pppoe  chap pap   
+
+Summary:
+   total: 5      
+      up: 3             down: 2      
+   bound: 2          unbound: 3      
+    auth: 1        interface: 2       subscriber: 0           bypass: 0      
+    no-bind: 2           atm: 0            chdlc: 0            dot1q: 0      
+      ether: 4            fr: 0              gre: 0      
+       mpls: 0              ppp: 0         pppoe: 1      
+      clips: 0             vpls: 0          ipip: 0      
+      ipsec: 0       ipv6v4-man: 0      ipv6v4-auto: 0      
+[local]sjl3-ecp-ssr26#
